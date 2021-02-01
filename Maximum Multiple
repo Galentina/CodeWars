@@ -1,0 +1,7 @@
+function maxMultiple(divisor, bound){
+  let i = bound;
+  while (i <= bound && i > 0) {
+    if (i%divisor === 0) return i;
+    i--;
+  }
+}
