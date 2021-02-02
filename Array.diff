@@ -1,0 +1,6 @@
+function arrayDiff(a, b) {
+  let arr1 = a;
+  for (let i=0; i<b.length; i++){
+    arr1 = arr1.filter(el => el!==b[i]);}
+    return arr1;
+}
