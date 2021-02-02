@@ -1,0 +1,3 @@
+let filterLucky=(x)=>{
+ arr1 = x.filter(el => String(el).includes(7)); return arr1;
+}
