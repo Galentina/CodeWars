@@ -1,0 +1,9 @@
+function mergeArrays(a, b) {
+ let x, res=[];
+ x = Math.max(a.length, b.length);
+ for(let i=0; i<x; i++){
+  if (a[i]) res.push(a[i]);
+    if (b[i]) res.push(b[i]);
+ }
+  return res;
+}
