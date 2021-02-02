@@ -1,0 +1,4 @@
+function well(x){
+let arr = x.filter(el => el==='good');
+  return (arr.length<1) ? 'Fail!' : (arr.length>2) ? 'I smell a series!' : 'Publish!';
+}
