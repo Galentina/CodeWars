@@ -1,0 +1,4 @@
+function one(arr, fun){
+ arr1 = arr.filter(el => fun(el) === true);  
+  return (arr1.length===1) ? true : false;
+}
