@@ -1,0 +1,5 @@
+function noRepeat(str) {  
+let arr=str.split('');
+ arr=arr.filter((el,i)=> arr.indexOf(el)===arr.lastIndexOf(el));
+  return (arr[0]);
+}
