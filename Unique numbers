@@ -1,0 +1,5 @@
+function uniqueNumbers(numbersArray) {
+  let arr1 = [];
+  numbersArray.map((el, i)=> (!arr1.includes(numbersArray[i])) ? arr1.push(numbersArray[i]): el);
+  return arr1;
+}
