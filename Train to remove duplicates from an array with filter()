@@ -1,0 +1,4 @@
+function unique(arr) {
+let arr1 = arr.filter((el, i)=> arr.indexOf(el)===i);  
+  return arr1;
+}
