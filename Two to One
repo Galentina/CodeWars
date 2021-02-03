@@ -1,0 +1,5 @@
+function longest(s1, s2) {
+  let  a1 = (s1+s2).split('');
+  let arr1 = a1.filter((el, i) => !a1.includes(el,i+1)).sort();
+  return arr1.join(''); 
+}
