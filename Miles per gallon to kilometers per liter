@@ -1,0 +1,4 @@
+function converter(mpg) {
+  let a = mpg * 1.609344 / 4.54609188;
+ return Math.round(a*100) / 100;
+}
