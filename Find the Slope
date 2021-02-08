@@ -1,0 +1,8 @@
+function slope(points)
+{
+let x1 = [points[0], points[1]];
+let x2 = [points[2], points[3]];
+let k = '';
+  if (x1[0] === x2[0]) return 'undefined';
+  else return k= k+(x2[1] - x1[1])/(x2[0] - x1[0]); 
+}
