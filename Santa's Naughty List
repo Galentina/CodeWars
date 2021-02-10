@@ -1,0 +1,7 @@
+function findChildren(santasList, children) {
+  let arr = [];
+  children.map(el => {
+  if (santasList.includes(el) && !arr.includes(el)) arr.push(el);
+      })
+  return arr.sort();
+}
