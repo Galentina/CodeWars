@@ -1,0 +1,5 @@
+function sumOfDifferences(arr) {
+  let res=0; 
+  if (arr.length>1) {arr.sort((a,b) => b-a); res=arr[0]-arr[arr.length-1];}
+  return res;
+}
