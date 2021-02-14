@@ -1,0 +1,4 @@
+function mirror(data) {
+data = [...data];
+return [...data.sort((a, b) => a - b), ...data.reverse().slice(1)]
+}
