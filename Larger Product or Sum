@@ -1,0 +1,6 @@
+function sumOrProduct(array, n) {
+ let sum=0, pr = 1;
+ array.sort((a,b)=> b-a).map((el, i) => (i<n) ? sum = sum+el : sum);
+ array.sort((a,b)=> a-b).map((el, i) => (i<n) ? pr = pr*el: pr);
+  return (sum > pr) ? "sum" : (sum<pr) ? "product" : "same";
+}
