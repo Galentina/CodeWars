@@ -1,0 +1,5 @@
+function arithmeticSequenceElements(a,r,n) {
+  let str = [a];
+  for (let i = 1; i<n; i++) {a= a+r; str.push(a);} 
+  return str.join(', ');
+}
