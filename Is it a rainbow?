@@ -1,0 +1,5 @@
+function sortRainbow(colour){
+  if (colour.length===0) return false;
+const res=['red','orange','yellow','green','blue','indigo','violet'];
+  return colour.every((el,i)=>el===res[i]);
+}
