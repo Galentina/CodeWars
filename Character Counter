@@ -1,0 +1,11 @@
+function validateWord(s)
+{
+  const s1 = (s.length!==0) ? s.toLowerCase().split('') : [];
+  const res = (x) => {let sum = 0;
+    for(let i=0; i<s1.length; i++){
+      (s1[i]===x) ? sum++ : sum;
+    } return sum;
+  }
+  let first = res(s1[0]);  
+  return (s1.every(el => res(el)===first) || s1.length===0) ? true : false;
+}
