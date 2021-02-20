@@ -1,0 +1,6 @@
+function cookie(x){
+  let n ='Who ate the last cookie?';
+  if (typeof x === 'string') return n + ' ' + 'It was Zach!';
+  else if (typeof x === 'number') return n + ' ' + "It was Monica!";
+  else return n + ' ' + "It was the dog!"
+}
