@@ -1,0 +1,6 @@
+function mean(lst){
+   let a=0, b='';
+  lst.map(el => (el >= 'A' && el <= 'z') ? b=b+el : a=a+(+el));
+  console.log(a);
+ return [a/10, b];
+}
