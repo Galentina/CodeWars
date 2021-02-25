@@ -1,0 +1,4 @@
+function sumSquares(array) {
+  let result = array.reduce((acc,curr) => acc+curr**2, 0);
+  return result;
+}
