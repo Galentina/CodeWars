@@ -1,0 +1,3 @@
+function predictAge(...theArgs){
+ return Math.floor(Math.sqrt(theArgs.reduce((a,b)=>a+b**2, 0), 2)/2);
+}
