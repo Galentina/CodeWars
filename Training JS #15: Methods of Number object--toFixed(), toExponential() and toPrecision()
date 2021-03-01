@@ -1,0 +1,5 @@
+function howManySmaller(arr,n){
+ let res=0;
+ arr.map(el => el.toFixed(2)).map(el=>(el<n) ? res++ : el);
+ return res; 
+}
