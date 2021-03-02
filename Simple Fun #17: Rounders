@@ -1,0 +1,9 @@
+function rounders(value) {
+ let arr=String(value).split('').reverse();
+  arr=arr.map(el=> el=+el)
+  for (let i=0; i<arr.length-1; i++){
+    if (arr[i]>=5) {arr[i]=0; arr[i+1]++;}
+    else {arr[i]=0; } 
+  } 
+  return Number(arr.reverse().join(''))
+}
