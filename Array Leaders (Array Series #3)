@@ -1,0 +1,5 @@
+const arrayLeaders = (numbers) => {
+  let res=[];
+  numbers.map((el,i) => el>numbers.slice(i+1).reduce((x,y)=> x+y, 0) ? res.push(el) : el)
+  return res;
+}
