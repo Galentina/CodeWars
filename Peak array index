@@ -1,0 +1,7 @@
+function peak(arr){
+let res;
+for (let i=1; i<arr.length-1; i++){
+  if (arr.slice(0,i).reduce((x,y) => x+y, 0) === arr.slice(i+1).reduce((x,y) => x+y, 0)) return res=i;
+} 
+      return (res!==undefined) ? res : -1;
+}
