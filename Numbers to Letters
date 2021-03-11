@@ -1,0 +1,6 @@
+function switcher(x){
+let str=' zyxwvutsrqponmlkjihgfedcba!? ';
+  let res='';
+  x.map(el=> res=res+str[+el]);
+  return res;
+}
