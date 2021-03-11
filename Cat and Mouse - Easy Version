@@ -1,0 +1,3 @@
+function catMouse(x){
+return (x.indexOf("m")-x.indexOf("C")<=3 || x==='C...m') ?  'Caught!' : 'Escaped!';
+}
