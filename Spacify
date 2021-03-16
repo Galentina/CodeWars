@@ -1,0 +1,3 @@
+function spacify(str) {
+return str.split('').map((el,i) => (i<str.length-1) ? el=el+' ' : el).join('');
+}
