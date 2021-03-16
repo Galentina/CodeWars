@@ -1,0 +1,6 @@
+function lowercaseCount(str){
+  let sum =0, str1='abcdefghijklmnopqrstuvwxyz';
+ for (let i=0; i<str.length; i++){
+   if (str1.includes(str[i])) sum++;
+ } return sum;
+}
