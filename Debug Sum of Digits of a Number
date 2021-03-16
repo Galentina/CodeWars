@@ -1,0 +1,8 @@
+function getSumOfDigits(integer) {
+  let digits =  Math.floor(integer).toString();
+  let sum = 0;
+  for(let i = 0; i < digits.length; i++) {
+    sum =sum + (+digits[i]);
+  }
+  return sum;
+}
