@@ -1,0 +1,10 @@
+function countZeros(n) {
+  let str='', res=0;
+  for (let i=1; i<=n; i++){
+   str=str+i;
+ }
+  for (let i=1; i<str.length; i++){
+   if (str[i]==='0') res++;
+  } 
+  return res;
+}
