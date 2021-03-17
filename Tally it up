@@ -1,0 +1,10 @@
+let scoreToTally = function(score){
+  let a=score;
+  let arr=['a', 'b', 'c', 'd', 'e'];
+  let res='';
+  for (let i=5; i>=1; i--){
+    if (a>=i && i===5) res=res+(arr[i-1]+' '+'<br>').repeat(Math.floor(a/(i))); 
+    else if (a>=i && i!==5) res= res+(arr[i-1]).repeat(Math.floor(a/(i)));
+    a=a%(i);
+  } return res
+}
