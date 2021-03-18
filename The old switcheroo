@@ -1,0 +1,8 @@
+function vowel2index(str) {
+  const arr=['a','e','i','o','u','A','E','I','O','U'];
+  let res='';
+  for (let i=0; i<str.length; i++){
+    if (arr.includes(str[i])) res=res+(i+1);
+    else res=res+str[i];
+  } return res;
+}
