@@ -1,0 +1,7 @@
+function spEng(sentence){
+let a=sentence.toLowerCase(), res=[];
+  if (a ==='english') return true;
+  if (a.includes('english')) res=a.replace('english', '').split('');
+  if (res.sort()===res && res.length!==0) return true;
+  else return false;
+}
