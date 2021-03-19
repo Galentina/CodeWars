@@ -1,0 +1,14 @@
+const mispelled = function(word1, word2)
+{
+ let a=Math.abs(word1.length-word2.length);
+  if (a>1) return false;
+  else if (a<=1 && word1.includes(word2) || a<=1 && word2.includes(word1)) return true;
+  else if (word1.length===word2.length){
+    let d=0;
+     for (let i=0; i<word1.length; i++){
+       if (word1[i]!==word2[i]) d++;
+     } 
+    if (d<=1) return true;
+   } 
+  return false;
+}
