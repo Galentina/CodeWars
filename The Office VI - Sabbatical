@@ -1,0 +1,8 @@
+function sabb(s, val, happiness){
+let sum=0
+  for (let i=0; i<s.length; i++){
+  if ('sabbatical'.includes(s[i])) sum++;
+  if (s[i]===i) sum=sum+3;
+}
+  return (sum+val+happiness>22) ? 'Sabbatical! Boom!': 'Back to your desk, boy.';
+}
