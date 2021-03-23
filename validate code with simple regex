@@ -1,0 +1,4 @@
+function validateCode (code) {
+  let str=''+code;
+return (str.startsWith('1') || str.startsWith('2') || str.startsWith('3')) ? true : false;
+}
