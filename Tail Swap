@@ -1,0 +1,4 @@
+function tailSwap(arr) {
+  return [arr[0].slice(0, arr[0].indexOf(':'))+':'+arr[1].slice(arr[1].indexOf(':')+1), 
+          arr[1].slice(0, arr[1].indexOf(':'))+':'+arr[0].slice(arr[0].indexOf(':')+1)];
+}
