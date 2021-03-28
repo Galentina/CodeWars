@@ -1,0 +1,8 @@
+function scrollingText(text){
+let text1=text.toUpperCase();
+let arr=[];
+  for (let i=0; i<text1.length; i++){
+    arr.push(text1.slice(i) + text1.slice(0, i));
+  }
+  return arr;
+}
