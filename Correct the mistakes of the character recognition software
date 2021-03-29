@@ -1,0 +1,7 @@
+function correct(string)
+{
+	function obj(x){
+    return (x ==='1') ? 'I' : (x==='0')? 'O' : 'S';
+  }
+  return string.replace(/[0|1|5]/g, obj)
+}
