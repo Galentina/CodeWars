@@ -1,0 +1,4 @@
+function remove(s){
+ let arr=s.split('').reverse().join('').replace(/!*/, '')
+return arr.split('').reverse().join('')
+}
