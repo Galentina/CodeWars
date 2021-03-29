@@ -1,0 +1,4 @@
+function DNAStrand(dna){
+  return dna.replace(/[A]/g,'$').replace(/[T]/g,'A').replace(/[$]/g,'T')
+ .replace(/[C]/g,'$').replace(/[G]/g,'C').replace(/[$]/g,'G')
+}
