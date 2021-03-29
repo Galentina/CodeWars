@@ -1,0 +1,18 @@
+function correctPolishLetters (string) {
+function arr(a){
+  let c='';
+  switch (a) {
+    case 'ą': c='a'; break;
+    case 'ć': c='c'; break;
+    case 'ę': c='e';break;
+    case 'ł': c='l';break;
+    case 'ń': c='n';break;
+    case 'ó': c='o';break;
+    case 'ś': c='s';break;
+    case 'ź': c='z';break;
+    case 'ż': c='z';break;
+    default:break;
+  } return c;
+  }
+return string.replace(/[ąćęłńóśźż]/gi, arr);
+}
