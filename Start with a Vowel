@@ -1,0 +1,12 @@
+function vowelStart(str){
+  str=str.toLowerCase().replace(/\W/g, '')
+function sp(x){
+if (x==='a') return ' a';
+if (x==='o') return ' o';
+if (x==='e') return ' e';
+if (x==='i') return ' i';
+if (x==='u') return ' u';
+}
+let res=str.toLowerCase().replace(/\s/g,'').replace(/[aeoui-]/g, sp)
+return res.replace(/[ ]*/, '').replace(/[_]/g, '')
+}
