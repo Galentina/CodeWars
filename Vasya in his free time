@@ -1,0 +1,6 @@
+function CalculateString( n,  nums){
+ while (nums.includes('0') && nums.includes('1')) {
+      nums = nums.replace(/01|10/g,"")
+    }
+    return nums.length;
+  }
