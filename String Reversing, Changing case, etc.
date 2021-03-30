@@ -1,0 +1,6 @@
+function reverseAndMirror(s1,s2) {
+  let abc = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
+  let x1=s1.split('').map(el => (abc.includes(el)) ? el.toLowerCase() : el.toUpperCase())
+  let x2=s2.split('').map(el => (abc.includes(el)) ? el.toLowerCase() : el.toUpperCase()).reverse().join('')
+  return x2+'@@@'+x1.reverse().join('')+x1.reverse().join('');
+}
