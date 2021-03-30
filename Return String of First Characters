@@ -1,0 +1,5 @@
+function makeString(s){
+  let res=''
+ let arr=s.split(' ').map(el=> res=res+el[0])
+ return res;
+}
