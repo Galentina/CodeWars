@@ -1,0 +1,13 @@
+const isAnagram = function(test, original) {
+let res=false,
+  x=test=test.toLowerCase(), y=original=original.toLowerCase();
+  if (test.length===original.length) {
+    let i=0;
+   while (i<test.length) {
+       x=x.replace(test[i], '*');
+       y=y.replace(test[i],'*')
+       i++
+     } if (x===y) return true
+   }
+  return res;
+};
