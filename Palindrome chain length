@@ -1,0 +1,13 @@
+const palindromeChainLength = function(n) {
+  let x=''+n, steps=0, y=x.split('').reverse().join('');
+  if (x===y) return steps;
+  else {
+  while (x!==y){
+    let z=(+x)+(+y);
+    x=''+z;
+    y=x.split('').reverse().join('');
+    steps++;
+  }
+  }
+  return steps;
+};
