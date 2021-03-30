@@ -1,0 +1,5 @@
+function product(s){
+ let x=0, y=0;
+ s.split('').map(el=> el==='!' ? x++ : y++);
+  return (s.length!==0) ? x*y : 0;
+}
