@@ -1,0 +1,4 @@
+function validatePIN (pin) {
+ let x=pin.replace(/\D/g,'')
+   return (pin.length===4 && x.length===4 || pin.length===6 && x.length===6)? true : false;
+}
