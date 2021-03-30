@@ -1,0 +1,10 @@
+function isMatching(string, str1, str2) {
+let res=string.replace(/[ ]/g, '').toLowerCase(), 
+    x1=(str1+str2).replace(/[ ]/g,'').toLowerCase(), z=false;
+if (res.length===x1.length)
+  {for (let i=0; i<res.length; i++) {
+    x1=x1.replace(res[i], '*')
+  }}
+  if(x1.split('').every(el=> el==='*')) z= true;
+  return z;
+}
