@@ -1,0 +1,4 @@
+function totalBill(str) {
+  let res=str.replace(/[ ]/g, '').length
+return (res-Math.floor(res/5))*2
+}
