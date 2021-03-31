@@ -1,0 +1,11 @@
+function determineTime(durations){
+  console.log(durations)
+ let res=[], sum=0;
+ let arr=durations.map(el=> {
+   let m=el.split(':'); 
+   res.push(+m[0]*3600+(+m[1])*60+(+m[2]))})
+ for (let i=0; i<res.length; i++) {
+   sum=sum+res[i];
+ }
+  return (sum>86400)?false:true
+}
