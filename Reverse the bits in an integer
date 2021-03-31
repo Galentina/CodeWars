@@ -1,0 +1,4 @@
+function reverseBits (n) {
+let res=n.toString(2).split('').reverse().join('')
+return Number.parseInt(res, 2)
+}
