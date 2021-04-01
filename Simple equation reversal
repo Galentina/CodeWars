@@ -1,0 +1,5 @@
+function solve(eq){
+  let x1=eq.replace(/\d/g,'').split('').reverse();
+  let x2=eq.replace(/\D/g,' ').split(' ').reverse();
+return x2.map((el,i)=> (i<x1.length) ? el=el+x1[i] : el).join('')
+}
