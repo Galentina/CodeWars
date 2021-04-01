@@ -1,0 +1,7 @@
+function duplicateSandwich(a) {
+   let arr=[]
+  for (let i=0; i<a.length; i++){
+    if (i!==a.lastIndexOf(a[i])) return arr=a.slice(i+1, a.lastIndexOf(a[i]))
+  }
+  return arr;
+}
