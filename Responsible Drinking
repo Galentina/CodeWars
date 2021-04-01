@@ -1,0 +1,4 @@
+function hydrate(s) {
+  let res=s.replace(/\D/g, '').split('').map(el=>+el).reduce((a, c) => a + c)
+ return (res<=1) ? `${res} glass of water`: `${res} glasses of water`
+}
