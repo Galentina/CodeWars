@@ -1,0 +1,6 @@
+const removeConsecutiveDuplicates = s => {
+  let x=s.split(' ')
+  let res=[x[0]]
+  x.map(el=> res[res.length-1] !== el ? res.push(el) : el)
+  return res.join(' ')
+}
