@@ -1,0 +1,8 @@
+function digits(num){
+const arr=(''+num).split('').map(el=> +el)
+let res=[]
+arr.map((el,i)=>{
+  for (let j=i+1; j<arr.length; j++){res.push(el+arr[j])}
+})
+  return res
+}
