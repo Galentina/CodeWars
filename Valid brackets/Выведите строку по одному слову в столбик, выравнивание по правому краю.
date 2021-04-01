@@ -1,0 +1,10 @@
+function wordsInColumn(text){
+let arr=text.split(' ')
+let max=0;
+arr.map(el=> (el.length>max) ? max=el.length : el)
+for (let i=0; i<arr.length; i++){
+let s='*'
+  if (arr[i].length<max) { l=max-arr[i].length; arr[i]=s.repeat(l)+arr[i]; }
+}
+   return arr.join('\n').replace(/[*]/g, ' ');
+}
