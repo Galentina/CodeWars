@@ -1,0 +1,5 @@
+function fix(paragraph){
+  return paragraph.split('. ')
+    .map(el=> el.split('').map((el,i)=> (i===0)?el[i]=el[i].toUpperCase():el).join(''))
+    .join('. ')
+}
