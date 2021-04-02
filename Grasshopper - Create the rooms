@@ -1,0 +1,5 @@
+let rooms = {
+  room1: {name: 'room 1', description: 'description 1', completed: true},
+  room2: {name: 'room 2', description: 'description 2', completed: true},
+  room3: {name: 'room 3', description: 'description 3', completed: true}
+  }
