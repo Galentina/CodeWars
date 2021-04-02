@@ -1,0 +1,6 @@
+function countWins(winnerList, country) {
+let win=0;
+  for(let i=0; i<winnerList.length; i++){
+  if (winnerList[i].country===country) win++;
+} return win;
+}
