@@ -1,0 +1,5 @@
+function duckDuckGoose(players, goose) {
+  console.log(players)
+  let n=(goose-1)%players.length
+return players[n].name
+}
