@@ -1,0 +1,7 @@
+function redarr(arr) {
+let arr1=[]
+arr.map(el=> !arr1.includes(el) ? arr1.push(el): el)
+let obj={}
+arr1.sort().map((el, i)=> obj[i]=el)
+return obj
+}
