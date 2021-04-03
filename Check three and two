@@ -1,0 +1,13 @@
+function checkThreeAndTwo(array) {
+let res={};
+for (let i=0; i<array.length; i++){
+  if (!res[array[i]]) res[array[i]]=1;
+  else res[array[i]] = res[array[i]]+1
+}
+  console.log(res)
+  for(let key in res){
+  if (res[key]===3) {
+    for(let key in res){if (res[key]===2) return true}
+  }}
+return false
+}
