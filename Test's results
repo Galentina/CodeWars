@@ -1,0 +1,6 @@
+function testResult(array) {
+ let v={'h': 0, 'a': 0, 'l': 0}
+ let res=+(array.reduce((a,c)=>a+c)/array.length).toFixed(3)
+ array.map(el=> (el>=9) ? v['h']++ : (el<=6) ? v['l']++ : v['a']++)
+  return (res>=9 && v['a']===0 && v['l']===0) ? [res, v, 'They did well'] : [res, v]
+}
