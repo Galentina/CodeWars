@@ -1,7 +1,7 @@
 function createDict(keys, values){
   let res={}
 for (let i=0; i<keys.length; i++){
-  if (values[i]) res[keys[i]]=values[i];
+  if (values[i]!==undefined) res[keys[i]]=values[i];
   else res[keys[i]]=null;
 } return res;
 }
