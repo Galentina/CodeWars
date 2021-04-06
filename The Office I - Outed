@@ -1,0 +1,7 @@
+function outed(meet, boss){
+let sum=0
+for (let key in meet){
+  if (key===boss) sum=sum+2*meet[key];
+  else sum=sum+meet[key]
+} return (sum/11<=5) ?  'Get Out Now!': 'Nice Work Champ!'
+}
