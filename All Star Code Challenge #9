@@ -1,0 +1,4 @@
+function bite(thing){
+if (thing.race==='human') thing.race = 'zombie'
+  return thing
+  }
