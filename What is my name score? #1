@@ -1,0 +1,9 @@
+function nameScore(name){
+  let sum=0
+let arr=name.replace(/[ ]/g,'').toUpperCase().split('')
+for (let i=0; i<arr.length; i++){
+ for (let key in alpha) {
+  if (key.includes(arr[i])) sum=sum + alpha[key]
+}
+  } return {[name]: sum}
+}
