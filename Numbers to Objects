@@ -1,0 +1,5 @@
+function numObj(s){
+  let res=[]
+  s.map(el=> { let obj={}; obj[el] = String.fromCharCode(el); res.push(obj)})
+ return res
+}
