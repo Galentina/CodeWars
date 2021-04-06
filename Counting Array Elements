@@ -1,0 +1,8 @@
+function count(array){
+let obj={};
+for(let i=0; i<array.length; i++){
+if (Object.keys(obj).filter(el=>el===array[i]).length===0)
+  obj[array[i]]=1;
+ else obj[array[i]]+=1;
+  } return obj
+}
