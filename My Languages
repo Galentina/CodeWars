@@ -1,0 +1,6 @@
+function myLanguages(results) {
+let arr=Object.values(results).filter(el=> el>=60).sort((a,b)=>b-a)
+let res=[]
+arr.map(el=>{for(let key in results){if(results[key]===el) res.push(key);}}) 
+  return res
+}
