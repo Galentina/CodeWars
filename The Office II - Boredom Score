@@ -1,0 +1,11 @@
+function boredom(staff){
+  let score={'accounts': 1, 'finance': 2, 'canteen': 10, 'regulation': 3, 'trading': 6, 'change': 6, 'IS': 8, 'retail': 5, 'cleaning': 4, 'pissing about': 25}
+  let arr=Object.values(staff);
+  let sum=0
+  arr.map(el=>{
+    for (let key in score){
+      if (el===key) sum=sum+score[key]
+    }
+  })  
+  return (sum <= 80) ? 'kill me now' : (sum>80 && sum<100) ? 'i can handle this' : 'party time!!'
+}
