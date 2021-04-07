@@ -1,0 +1,15 @@
+function replaceCommon(string, letter) {
+let obj={};
+  string.replace(/[ ]/g, '').split('').map(el=>Object.keys(obj).includes(el)? obj[el]+=1 : obj[el]=1)
+  let arr=[]
+  for (let key in obj){
+    if (obj[key]===Math.max(...Object.values(obj))) {
+      arr.push(key)
+    }
+  }
+let res=arr[0];
+  for (let i=0; i<arr.length; i++) {
+    if (string.indexOf(arr[i])<res) res=arr[i];
+  } 
+  return string.split('').map(el=> el===res ? el=letter: el).join('')
+  }
