@@ -1,0 +1,13 @@
+function solve(st) {
+let obj={}
+for (let i=0; i<st.length;i++){
+  if (!Object.keys(obj).includes(st[i])) obj[st[i]]=st.lastIndexOf(st[i])-st.indexOf(st[i]);
+}
+  let arr=Object.keys(obj)
+  let arrMax=[]
+  for (let i=0; i<arr.length; i++){
+    if (obj[arr[i]]===Math.max(...Object.values(obj))) arrMax.push(arr[i])
+    }
+ let res=arrMax.sort()
+     return res[0]
+  }
