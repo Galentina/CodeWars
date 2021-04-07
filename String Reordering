@@ -1,0 +1,9 @@
+function sentence(List) {
+let arr=List.map(el=>Object.entries(el)).map(el=> el=el[0])
+ let obj={}
+ arr.map(el=>obj[el[0]]=el[1])
+ let arr1=Object.keys(obj).sort((a,b)=> a-b)
+ let res='';
+ arr1.map(el=> { for(let key in obj){if(key==el) res=res+obj[key]+' ';}})
+ return res.trim()
+}
