@@ -1,0 +1,13 @@
+function numberOfPairs(gloves)
+{
+  let obj={};
+  gloves.map(el=> {
+    if (!Object.keys(obj).includes(el)) obj[el]=1;
+    else obj[el]+=1;
+  })
+  let sum=0;
+  for (let key in obj){
+    sum=Math.floor(obj[key]/2)+sum
+  }
+ return sum
+}
