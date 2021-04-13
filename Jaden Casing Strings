@@ -1,0 +1,3 @@
+String.prototype.toJadenCase = function () {
+ return this.split(' ').map(el=> el.split('').map((em, i)=> (i===0) ? em.toUpperCase(): em).join('')).join(' ')
+};
