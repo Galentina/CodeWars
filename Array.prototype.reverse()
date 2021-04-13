@@ -1,0 +1,7 @@
+Array.prototype.reverse = function() {
+  let arr=[]
+ this.map(el=> arr.unshift(el))
+ this.splice(0, this.length);
+  this.push(...arr);
+  return this;
+};
