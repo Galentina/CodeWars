@@ -1,0 +1,11 @@
+class Dinglemouse{
+
+  constructor( firstName, lastName ){
+    this.firstName = firstName;
+    this.lastName = lastName;
+    this.sp = (firstName=='' || lastName=='') ? '' : ' ';
+  }
+  getFullName(){
+    return this.firstName+ this.sp +this.lastName
+  }
+}
