@@ -1,0 +1,6 @@
+Array.prototype.only = function(keys)
+{
+ let res=[];
+  keys.sort((a,b)=>a-b).map(el=> res.push(this[el]));
+  return res
+}
