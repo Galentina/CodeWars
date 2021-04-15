@@ -1,0 +1,3 @@
+function numbers (...args) {
+  return (args.some(el=> typeof el !=='number')) ? false : true;  
+}
