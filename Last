@@ -1,0 +1,4 @@
+function last(list){
+  let res=arguments[arguments.length-1]
+  return res[res.length-1] || res
+}
