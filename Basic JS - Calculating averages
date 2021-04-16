@@ -1,0 +1,7 @@
+var Calculator = {
+ average: function() {
+ const arr=Array.from(arguments);
+   let s=arr.length;
+  return (arr.length!==0) ? arr.reduce((a,b)=>a+b)/s : 0;
+ }
+};
