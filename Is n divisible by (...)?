@@ -1,0 +1,3 @@
+function isDivisible(n,...other){
+return  other.every(el=> n%el===0);
+}
