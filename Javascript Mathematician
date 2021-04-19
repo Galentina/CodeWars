@@ -1,0 +1,3 @@
+function calculate(...x) {
+return (...y)=>x.concat(y).reduce((a,b)=>a+b)
+}
