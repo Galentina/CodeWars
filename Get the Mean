@@ -1,0 +1,4 @@
+function calculateMean() {
+  let arr=Array.from(arguments);
+  return +(arr.reduce((a,b)=>a+b)/arr.length).toFixed(2)
+};
