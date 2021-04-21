@@ -1,0 +1,4 @@
+function findSum(){
+  let arr=Array.from(arguments);
+  return arr.length===0 ? 0 : arr.some(el=> el<0) ? -1 : arr.reduce((a,b)=> a+b);
+}
