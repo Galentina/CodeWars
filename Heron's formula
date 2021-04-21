@@ -1,0 +1,5 @@
+function heron() {
+  let arr=Array.from(arguments);
+  let s=arr.reduce((a,b)=>a+b)/2;
+  return Math.sqrt(s*(s-arr[0])*(s-arr[1])*(s-arr[2]));
+}
