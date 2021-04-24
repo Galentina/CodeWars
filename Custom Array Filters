@@ -1,0 +1,19 @@
+Array.prototype.even = function(){
+ return this.filter(el=> Number.isInteger(el) && el%2===0)
+}
+
+Array.prototype.odd = function(){
+  return this.filter(el=> Number.isInteger(el) && el%2===1)
+}
+
+Array.prototype.under = function(x){
+  return this.filter(el=> Number.isInteger(el) && el<x)
+}
+
+Array.prototype.over = function(x){
+  return this.filter(el=> Number.isInteger(el) && el>x)
+}
+
+Array.prototype.inRange = function(min,max){
+ return this.filter(el=> Number.isInteger(el) && el<=max && el>=min)
+}
