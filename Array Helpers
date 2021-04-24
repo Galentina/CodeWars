@@ -1,0 +1,26 @@
+Array.prototype.square = function(){
+  let res=this.map(el=> el**2)
+  return res;
+}
+
+Array.prototype.cube = function(){
+  let res=this.map(el=> Math.pow(el,3))
+  return res;
+}
+
+Array.prototype.even = function(){
+  let res=this.filter(el=> el%2===0)
+  return res;
+}
+
+Array.prototype.odd = function(){
+  let res=this.filter(el=> el%2===1)
+  return res
+}
+Array.prototype.average = function(){
+  return this.length===0 ? NaN : this.reduce((a,b)=> a+b)/this.length;
+}
+
+Array.prototype.sum = function(){
+  return this.reduce((a,b)=> a+b);
+}
