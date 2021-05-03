@@ -1,6 +1,5 @@
 const Calculator = function() {
    this.evaluate = string => {
-        let sign=['+',"-","*","/"]
      let arr=string.split(' ');
      let arr1=[Number(arr[0])];
       let sum=0;
