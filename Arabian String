@@ -1,0 +1,4 @@
+function camelize(str){
+  let res=str.toLowerCase().replace(/\W/g,'_').split('_').map(el=>el.split('').map((em,i)=>(i===0)? em=em.toUpperCase(): em).join('')).join('')
+  return res
+}
