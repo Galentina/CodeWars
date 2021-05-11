@@ -1,0 +1,8 @@
+function multiTable(number) {
+  let res='', r;
+ for (let i=1; i<10; i++){
+   r=i*number
+   res = res +i + ' * ' + number + ' = ' + r + '\n'
+ }
+  return res+10 + ' * ' + number + ' = ' + 10*number;
+}
