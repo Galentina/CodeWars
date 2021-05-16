@@ -1,0 +1,4 @@
+const flip=(d, a)=>{
+  let res=a.sort((a,b)=> a-b)
+  return (d==="R") ? res : res.reverse();
+}
