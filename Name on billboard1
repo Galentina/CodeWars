@@ -1,0 +1,5 @@
+function billboard(name, price = 30){
+let sum = 0;
+name.split('').map(el=>sum=sum+price);
+  return sum;
+} 
