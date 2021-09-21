@@ -1,0 +1,5 @@
+function add(n) {
+  return function Add(n1){
+    return n+n1;
+  }
+}
