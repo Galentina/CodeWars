@@ -1,0 +1,7 @@
+function evenOrOdd(str) {
+let x=0, y=0;
+  str.split('').map(el => el%2===0 ? x=x+(+el) : y=y+(+el));
+  console.log(x, y)
+  return x===y ? "Even and Odd are the same" : x>y ? "Even is greater than Odd" : "Odd is greater than Even";
+
+}
