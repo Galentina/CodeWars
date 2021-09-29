@@ -1,0 +1,7 @@
+function dot(n,m){
+  let res="+" + "---+".repeat(n);
+  for (let i=1; i<=m; i++){
+    res = res + '\n' + '|' + ' o |'.repeat(n) + '\n' + "+" + "---+".repeat(n);
+    }
+  return res;
+}
