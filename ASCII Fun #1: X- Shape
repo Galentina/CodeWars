@@ -1,0 +1,18 @@
+function x(n){
+  const arr = [];
+ 
+  for (let j=0; j<=n/2; j++){
+    let str=[];
+    for (let i=0; i<n/2; i++) {
+     if (i===j) str.push("■");
+     else str.push("□");
+      }
+    str1 = str.slice(0,-1);
+    let a=str.join('');
+    let b=str1.reverse().join('')
+    arr.push(a + b);
+  }
+  const res = arr.join('\n');
+  const res1 = arr.reverse().slice(1).join('\n');
+  return res + '\n' + res1;
+}
