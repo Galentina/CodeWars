@@ -1,0 +1,6 @@
+function singleDigit(n) {
+    let x=n;
+while(x>=10)
+  x = x.toString(2).split('').reduce((a,b) => a+(+b), 0);
+ return x
+}
