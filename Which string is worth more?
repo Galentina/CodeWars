@@ -1,0 +1,3 @@
+function highestValue(a, b) {
+  return a.split('').reduce((x,y)=> x + y.codePointAt(0), 0) >= b.split('').reduce((x,y)=> x + y.codePointAt(0), 0) ? a : b;
+}
