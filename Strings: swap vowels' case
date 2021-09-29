@@ -1,0 +1,5 @@
+function swapVowelCase(str) {
+   const arr= ['a', 'e', 'o', 'u', 'i'];
+  const arr2 = ['A', 'E', 'O', 'U', 'I'];
+  return str.split('').map(el => arr.includes(el) ? el = el.toUpperCase() : arr2.includes(el) ? el = el.toLowerCase() : el).join('');
+}
