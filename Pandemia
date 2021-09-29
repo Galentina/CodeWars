@@ -1,0 +1,8 @@
+function infected(s) {
+  const a=s.split('X').join('').length;
+  if (a) {
+    let sum=0
+    s.split('X').map(el => el.includes(1) ? sum=sum+el.length : el);
+    return sum/a*100;}
+  else return 0;
+}
