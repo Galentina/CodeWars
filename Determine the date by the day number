@@ -1,0 +1,15 @@
+function getDay(day, isLeap){
+  const x = isLeap ? 29 : 28;
+  const year = [
+    ["January", 31], ["February", x], ["March", 31], ["April", 30], ["May", 31], ["June", 30], 
+    ["July", 31], ["August", 31], ["September", 30], ["October", 31], ["November", 30], ["December", 31]
+  ];
+  let sumDays = 0;
+  for (let i=0; i<year.length; i++) {
+    if (sumDays< day && year[i][1] < day - sumDays) { sumDays += year[i][1] }
+    else if (sumDays< day && year[i][1] >= day - sumDays) {
+      let currentDay =  day -sumDays;
+      return `${year[i][0]}, ${currentDay}`;
+      }
+  }
+}
